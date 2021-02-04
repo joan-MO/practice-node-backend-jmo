@@ -1,0 +1,10 @@
+var express = require('express');
+var router = express.Router();
+
+const Anuncio = require('../../models/Anuncio');
+
+router.get('/', async function(req, res, next) {
+    res.send('test')
+})
+
+module.exports = router;
