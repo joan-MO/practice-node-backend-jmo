@@ -25,7 +25,8 @@ app.use(express.static('/images/anuncios'))
 //Router api
 
 app.use('/apiv1/anuncios', require('./routes/api/anuncios'))
-app.use('/apiv1/tags',require('./routes/api/tags'))
+//app.use('/apiv1/tags',require('./routes/api/tags'))
+//app.use('/apiv1/anuncios/tags', require('./routes/api/anuncios'))
 
 //Router web
 
