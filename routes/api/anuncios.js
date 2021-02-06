@@ -25,6 +25,8 @@ router.get('/', asyncHandler(async (req, res, next) => {
         
 }));
 
+// GET /apiv1/anuncios/tags
+
 router.get('/tags', asyncHandler(async (req, res, next) => {
     
     const list_tags = {tags:[]};
