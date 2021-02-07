@@ -37,7 +37,7 @@ npm run dev
 
 The default port to connect to is : 3000 /` localhost:3000`
 
-##Methods API
+## Methods API
 
 This service have a differents methods and these is next:
 

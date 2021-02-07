@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "2aa476a0-2e8d-4af5-8c1e-8f1f24c78947",
+		"name": "nodepop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/apiv1/anuncios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tags",
+							"value": "tecnology",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "computer",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "lenovo y800",
+							"type": "text"
+						},
+						{
+							"key": "sale",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "portatil.jpg",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/apiv1/anuncios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"anuncios"
+					]
+				},
+				"description": "Create announcements"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/apiv1/anuncios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/apiv1/anuncios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"anuncios"
+					]
+				},
+				"description": "List Ads"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/apiv1/anuncios?tag=m&sale=false&price=50&limit=2&sort=price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/apiv1/anuncios?tag=m&sale=false&price=50&limit=2&sort=price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"anuncios"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "m"
+						},
+						{
+							"key": "sale",
+							"value": "false"
+						},
+						{
+							"key": "price",
+							"value": "50"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "sort",
+							"value": "price"
+						}
+					]
+				},
+				"description": "Get ads with filters: tags, name, price, sale, sort, limit"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/apiv1/anuncios/tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/apiv1/anuncios/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apiv1",
+						"anuncios",
+						"tags"
+					]
+				},
+				"description": "List all tags"
+			},
+			"response": []
+		}
+	]
+}
